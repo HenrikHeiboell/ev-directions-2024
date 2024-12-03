@@ -45,3 +45,5 @@ D:\Projekter\ev-directions-2024\memeapi\bin\Debug\net8.0\Microsoft.Extensions.Lo
 D:\Projekter\ev-directions-2024\memeapi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\Projekter\ev-directions-2024\memeapi\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 D:\Projekter\ev-directions-2024\memeapi\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Projekter\ev-directions-2024\memeapi\obj\Debug\net8.0\MemeApi.sourcelink.json
+D:\Projekter\ev-directions-2024\memeapi\bin\Debug\net8.0\Newtonsoft.Json.dll

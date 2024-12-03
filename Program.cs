@@ -20,6 +20,13 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<MemeContext>(options =>
     options.UseInMemoryDatabase("MemeList"));
 
+// Insecure Session Configuration
+// builder.Services.AddSession(options =>
+// {
+//     options.Cookie.HttpOnly = false; // Should be true
+//     options.Cookie.IsEssential = true;
+// });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
