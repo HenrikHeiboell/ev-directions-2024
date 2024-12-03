@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AN4UB0GOmCI=",
+  "dgSpecHash": "wMVSdgDIGXo=",
   "success": true,
-  "projectFilePath": "D:\\Projekter\\ev-directions-2024\\memeapi\\MemeApi.csproj",
+  "projectFilePath": "D:\\Projekter\\ev-directions-2024\\MemeApi\\MemeApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hkh\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.11\\microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",
     "C:\\Users\\hkh\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",

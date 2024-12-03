@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E763619F-9CB6-4A8A-80E4-775BF3F98961}|MemeApi.csproj|d:\\projekter\\ev-directions-2024\\memeapi\\controllers\\memescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E763619F-9CB6-4A8A-80E4-775BF3F98961}|MemeApi.csproj|solutionrelative:controllers\\memescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E763619F-9CB6-4A8A-80E4-775BF3F98961}|MemeApi.csproj|d:\\projekter\\ev-directions-2024\\memeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E763619F-9CB6-4A8A-80E4-775BF3F98961}|MemeApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,22 +40,9 @@
               "RelativeDocumentMoniker": "Controllers\\MemesController.cs",
               "ToolTip": "D:\\Projekter\\ev-directions-2024\\MemeApi\\Controllers\\MemesController.cs",
               "RelativeToolTip": "Controllers\\MemesController.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAtwJ8AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAAwKsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:24:11.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projekter\\ev-directions-2024\\MemeApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Projekter\\ev-directions-2024\\MemeApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:24:09.943Z",
+              "WhenOpened": "2024-12-03T07:47:58.292Z",
               "EditorCaption": ""
             }
           ]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projekter\\ev-directions-2024\\memeapi\\MemeApi.csproj": {}
+    "D:\\Projekter\\ev-directions-2024\\MemeApi\\MemeApi.csproj": {}
   },
   "projects": {
-    "D:\\Projekter\\ev-directions-2024\\memeapi\\MemeApi.csproj": {
+    "D:\\Projekter\\ev-directions-2024\\MemeApi\\MemeApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekter\\ev-directions-2024\\memeapi\\MemeApi.csproj",
+        "projectUniqueName": "D:\\Projekter\\ev-directions-2024\\MemeApi\\MemeApi.csproj",
         "projectName": "MemeApi",
-        "projectPath": "D:\\Projekter\\ev-directions-2024\\memeapi\\MemeApi.csproj",
+        "projectPath": "D:\\Projekter\\ev-directions-2024\\MemeApi\\MemeApi.csproj",
         "packagesPath": "C:\\Users\\hkh\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekter\\ev-directions-2024\\memeapi\\obj\\",
+        "outputPath": "D:\\Projekter\\ev-directions-2024\\MemeApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hkh\\AppData\\Roaming\\NuGet\\NuGet.Config",
