@@ -87,53 +87,12 @@ public class MemesController : ControllerBase
         return meme;
     }
 
-    [HttpPost]
-    public async Task<ActionResult<Meme>> CreateMeme(Meme meme)
-    {
-        _context.Memes.Add(meme);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetMeme), new { id = meme.Id }, meme);
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateMeme(int id, Meme meme)
-    {
-        var existingMeme = await _context.Memes.FindAsync(id);
-        if (existingMeme == null)
-        {
-            return NotFound();
-        }
-
-        existingMeme.Url = meme.Url;
-        await _context.SaveChangesAsync();
-
-        return NoContent();
-    }
-
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteMeme(int id)
-    {
-        var meme = await _context.Memes.FindAsync(id);
-        if (meme == null)
-        {
-            return NotFound();
-        }
-
-        _context.Memes.Remove(meme);
-        await _context.SaveChangesAsync();
-
-        return NoContent();
-    }
-
     // Endpoint demonstrating SQL injection vulnerability
     [HttpGet("search")]
     public async Task<ActionResult<IEnumerable<Meme>>> SearchMemes(string query)
     {
-        var memes = _context
-            .Memes.Where(m => EF.Functions.Like(m.Caption, "%" + query + "%"))
-            .ToList();
-
+        var sql = $"SELECT * FROM Memes WHERE Caption LIKE '%{query}%'";
+        var memes = await _context.Memes.FromSqlRaw(sql).ToListAsync();
         return memes;
     }
 
