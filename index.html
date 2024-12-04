@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Directions 2024</title>
+    <style>
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffcc00, #ff6699, #66ccff, #ffcc00);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 10s ease infinite;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ff00ff;
+            text-shadow: 2px 2px 0 #0000ff, 4px 4px 0 #00ffff, 6px 6px 0 #00ff00, 8px 8px 0 #ffff00, 10px 10px 0 #ff0000;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .slide {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        #memes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #memes img {
+            margin: 10px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            height: auto;
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        #memes img:hover {
+            transform: scale(1.1) rotate(10deg);
+            filter: brightness(1.2);
+        }
+
+        .nav-buttons {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #c0c0c0;
+            border: 2px solid #fff;
+            box-shadow: 2px 2px 0 #808080, -2px -2px 0 #fff;
+            font-family: 'Tahoma', sans-serif;
+            color: #000;
+        }
+
+        .nav-buttons button:active {
+            box-shadow: inset 2px 2px 0 #808080, inset -2px -2px 0 #fff;
+        }
+
+        pre {
+            text-align: left;
+            background-color: #f0f0f0;
+            color: #000;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            overflow-x: auto;
+            max-width: 1200px;
+            min-width: 800px;
+        }
+    </style>
+    <style>
+        /* CSS Styles for GitHub Icon Animation */
+        .github-icon {
+            position: fixed;
+            top: 10%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            opacity: 0.1;
+            color: #000;
+            /* GitHub icon color */
+            z-index: -1;
+            /* Ensure it's in the background */
+            animation: moveAround 30s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveAround {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(70vw, 10vh) rotate(90deg);
+            }
+
+            50% {
+                transform: translate(50vw, 80vh) rotate(180deg);
+            }
+
+            75% {
+                transform: translate(20vw, 60vh) rotate(270deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+
+        /* Optional: Multiple Icons for More Dynamism */
+        .github-icon:nth-child(2) {
+            top: 50%;
+            left: 80%;
+            width: 80px;
+            height: 80px;
+            animation-duration: 25s;
+            animation-delay: 5s;
+        }
+
+        .github-icon:nth-child(3) {
+            top: 80%;
+            left: 20%;
+            width: 120px;
+            height: 120px;
+            animation-duration: 35s;
+            animation-delay: 10s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- GitHub Icons -->
+    <div class="github-icon">
+        <!-- GitHub SVG Icon -->
+        <svg width="98" height="96" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                fill="#24292f" />
+        </svg>
+    </div>
+    <!-- Slide 1: Welcome -->
+    <div class="slide active" id="slide1">
+        <h1>EV Directions 2024</h1>
+        <h2>GitHub Advanced Security</h2>
+        <div class="nav-buttons">
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+    <div class="slide" id="slide17">
+        <h1>Hvad er GitHub Advanced Security</h1>
+        <ul style="text-align: left; max-width: 1600px; list-style: none; padding: 0; font-size: 21px;">
+            <li style="color: #000; margin-bottom: 5px;">🔍 <strong>Automatisk kode scannning</strong> for sårbarheder
+                og fejl</li>
+            <li style="color: #000; margin-bottom: 5px;">🔐 <strong>Secret scanning</strong> for at opdage eksponerede
+                nøgler og tokens</li>
+            <li style="color: #000; margin-bottom: 5px;">📦 <strong>Dependency review</strong> for sikkerhedsfejl i
+                afhængigheder</li>
+            <li style="color: #000; margin-bottom: 5px;">🛡️ <strong>Policy management</strong> for at definere og
+                håndhæve sikkerhedspolitikker</li>
+            <li style="color: #000; margin-bottom: 5px;">🔄 <strong>Integreret med CI/CD workflows</strong> for
+                kontinuerlig sikkerhed</li>
+            <li style="color: #000; margin-bottom: 5px;">🔍 <strong>CodeQL</strong>: Avanceret kodeanalyse til at
+                identificere komplekse sikkerhedsproblemer</li>
+            <li style="color: #000; margin-bottom: 5px;">📢 <strong>Sikkerheds Advisories</strong> for at håndtere og
+                kommunikere sårbarheder</li>
+            <li style="color: #000; margin-bottom: 5px;">🔧 <strong>Automatiseret review</strong> baseret på fundne
+                sårbarheder</li>
+            <li style="color: #000; margin-bottom: 5px;">📊 <strong>Rapportering og overvågning</strong> af
+                sikkerhedsstatus for repositories</li>
+            <li style="color: #000; margin-bottom: 5px;">✅ <strong>Compliance checks</strong> for at sikre overholdelse
+                af industristandarder</li>
+        </ul>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+    <div class="slide" id="slide18">
+        <h1>GHAS Autofix</h1>
+        <ul style="text-align: left; max-width: 1600px; list-style: none; padding: 0;  font-size: 21px;">
+            <li style="color: #000; margin-bottom: 5px;">🔧 <strong>Automatisk rettelse af sårbarheder</strong>
+                identificeret af CodeQL</li>
+            <li style="color: #000; margin-bottom: 5px;">🔄 <strong>Integration med CI/CD</strong> for kontinuerlig
+                sikkerhedsopdatering</li>
+            <li style="color: #000; margin-bottom: 5px;">🚀 <strong>Forbedrer udviklingshastighed</strong> ved proaktiv
+                sikkerhed</li>
+            <li style="color: #000; margin-bottom: 5px;">🛠️ <strong>Anbefaling af kodeændringer</strong> for at lukke
+                sårbarheder</li>
+            <li style="color: #000; margin-bottom: 5px;">⚙️ <strong>Reducerer menneskelige fejl</strong> i
+                sikkerhedsopdateringer</li>
+            <li style="color: #000; margin-bottom: 5px;">📈 <strong>Forbedret sikkerhedsstatus</strong> gennem
+                automatiserede fixes</li>
+            <li style="color: #000; margin-bottom: 5px;">💡 <strong>Smart integration</strong> med eksisterende
+                udviklingsværktøjer</li>
+            <li style="color: #000; margin-bottom: 5px;">🔍 <strong>Detaljerede rapporter</strong> om gennemførte fixes
+            </li>
+            <li style="color: #000; margin-bottom: 5px;">✅ <strong>Sikkerhedskompatibilitet</strong> med
+                industristandarder</li>
+            <li style="color: #000; margin-bottom: 5px;">📊 <strong>Overvågning og analyse</strong> af
+                sikkerhedsforbedringer</li>
+        </ul>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+    <!-- Slide 2: Search Memes -->
+    <div class="slide" id="slide2">
+        <h1>Eksempler</h1>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+    <!-- Slide 2: Search Memes -->
+    <!-- Slide X: SQL Injection Demonstration -->
+    <div class="slide" id="slideX">
+        <h1>SQL Injection</h1>
+        <pre><code class="csharp">
+    [HttpGet("search")]
+    public async Task<ActionResult<IEnumerable<Meme>>> SearchMemes(string query)
+    {
+        var sql = $"SELECT * FROM Memes WHERE Caption LIKE '%{query}%'";
+        var memes = await _context.Memes.FromSqlRaw(sql).ToListAsync();
+        return memes;
+    }
+        </code></pre>
+        <pre><code class="sql">
+    SELECT * FROM Memes WHERE Caption LIKE '%' OR '1'='1'%
+        </code></pre>
+
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 4: Hardcoded Secrets -->
+    <div class="slide" id="slide4">
+        <h1>Hardcoded Secrets</h1>
+        <p>Storing sensitive information directly in the code is a major security risk.</p>
+        <pre>
+            <code class="csharp">
+                public class ApiConfig
+                {
+                    public const string GoogleApiKey = "AIzaSyD-EXAMPLE-KEY";
+                    public const string DatabasePassword = "SuperSecretPassword123";
+                }
+            </code>
+        </pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 6: Cross-Site Scripting (XSS) -->
+    <div class="slide" id="slide6">
+        <h1>Cross-Site Scripting (XSS)</h1>
+        <p>Injecting unsanitized user input into the HTML can lead to XSS attacks.</p>
+        <pre><code class="javascript">
+            async function searchMemes() {
+                const query = document.getElementById('searchQuery').value;
+                const response = await fetch(`http://localhost:5065/api/memes/search?query=${query}`);
+                const memes = await response.json();
+                const memesDiv = document.getElementById('memes');
+                memesDiv.innerHTML = ''; // Clear previous results
+                memes.forEach(meme => {
+                    memesDiv.innerHTML += meme.url; // Injects unsanitized HTML
+                });
+            }
+        </code></pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 7: Insecure CORS Configuration -->
+    <div class="slide" id="slide7">
+        <h1>(Insecure CORS Configuration)</h1>
+        <p>Allowing any origin can expose your API to unwanted access.</p>
+        <pre><code class="csharp">
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                    });
+            });
+        </code></pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 8: Insecure File Upload -->
+    <div class="slide" id="slide8">
+        <h1>Insecure File Upload</h1>
+        <p>Allowing users to upload files without validating the file type can lead to malware uploads.</p>
+        <pre><code class="csharp">
+            [HttpPost("upload")]
+            public async Task<IActionResult> UploadMeme(IFormFile file)
+            {
+                if (file == null || file.Length == 0)
+                {
+                    return BadRequest("No file uploaded.");
+                }
+
+                var filePath = Path.Combine("uploads", file.FileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                return Ok(new { filePath });
+            }
+        </code></pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 9: Command Injection -->
+    <div class="slide" id="slide9">
+        <h1>Command Injection</h1>
+        <p>Executing system commands based on user input without proper validation can lead to arbitrary command
+            execution.</p>
+        <pre><code class="csharp">
+            [HttpGet("run")]
+            public async Task<IActionResult> RunCommand(string cmd)
+            {
+                if (string.IsNullOrEmpty(cmd))
+                {
+                    return BadRequest("No command provided.");
+                }
+                resultDiv.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+
+                var process = new Process
+                {
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = "cmd.exe",
+                        Arguments = "/C " + cmd,
+                        RedirectStandardOutput = true,
+                        UseShellExecute = false,
+                        CreateNoWindow = true,
+                    }
+                };
+                process.Start();
+                string result = await process.StandardOutput.ReadToEndAsync();
+                process.WaitForExit();
+
+                return Ok(result);
+            }
+        </code></pre>
+        <!-- Button to Demonstrate Potential Exploit -->
+        <div style="margin: 20px 0;">
+            <button onclick="executeCommand()"
+                style="padding: 10px 20px; cursor: pointer; background-color: #ff0000; color: #fff; border: none; border-radius: 4px;">
+                🎬
+            </button>
+            <button onclick="createOutlookMail()"
+                style="padding: 10px 20px; cursor: pointer; background-color: #0078D7; color: #fff; border: none; border-radius: 4px;">
+                📧 Send en fed mail!
+            </button>
+        </div>
+
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+    <!-- JavaScript Function to Call RunCommand API -->
+    <script>
+        async function executeCommand() {
+            const command = 'start microsoft-edge:https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+
+            try {
+                const response = await fetch(`http://localhost:5065/api/memes/run?cmd=${encodeURIComponent(command)}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const result = await response.text();
+            } catch (error) {
+            }
+        }
+        async function createOutlookMail() {
+            const recipient = 'hkh@elbek-vejrup.dk';
+            const subject = 'Hjælp ønskes til at overføre 50.000.000 GULDSTAVE';
+        const body = `Kære ven,
+
+Mit navn er Prins Oberumba Kokoloko III, og jeg skriver til dig fra Kongeriget Bananasia. Jeg håber, at denne besked finder dig i god helbred og rigdom. Jeg har en utrolig mulighed til dig, som jeg kun kan dele med en person af din ærefulde karakter.
+
+På grund af politiske uroligheder i mit land har jeg brug for at overføre en enorm mængde rigdom til en sikker konto i udlandet. Disse midler beløber sig til 50.000.000 guldstave, som jeg personligt har arvet fra min afdøde bedstefar, Kong Glimreguld.
+
+Jeg har dog brug for en pålidelig samarbejdspartner (det er her DU kommer ind i billedet!) til at hjælpe mig med denne transaktion. Som belønning for din uundværlige hjælp, tilbyder jeg dig 15 % af hele beløbet (det er over 7.500.000 guldstave!).
+
+Alt, hvad jeg behøver fra dig, er følgende:
+
+- Dit fulde navn
+- Din adresse
+- Dit CPR-nummer (for verificering, selvfølgelig)
+- Dit kontonummer, så vi kan overføre midlerne direkte
+
+Tøv ikke! Tid er en afgørende faktor. Hvis vi ikke handler hurtigt, kan guldstave blive beslaglagt af den korrupte regering i Bananasia!
+
+Jeg ser frem til din hurtige respons, så vi kan starte processen.
+Må lykken skinne på dig!
+
+Med de bedste hilsner,  
+Prins Oberumba Kokoloko III  
+Den Ægte Arving til Bananasias Trone`;
+            const command = `start outlook.exe /c ipm.note /m "${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}"`;
+            try {
+                const response = await fetch(`http://localhost:5065/api/memes/run?cmd=${encodeURIComponent(command)}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const result = await response.text();
+            } catch (error) {
+            }
+        }
+    </script>
+
+    <!-- Slide 10: Inadequate Authentication and Authorization -->
+    <div class="slide" id="slide10">
+        <h1>Authentication and Authorization</h1>
+        <p>Fuld håndtag for sletning af records</p>
+        <pre><code class="csharp">
+            [HttpDelete("{id}")]
+            public async Task<IActionResult> DeleteMeme(int id)
+            {
+                var meme = await _context.Memes.FindAsync(id);
+                if (meme == null)
+                {
+                    return NotFound();
+                }
+
+                _context.Memes.Remove(meme);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
+            }
+        </code></pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 11: Improper Input Validation -->
+    <div class="slide" id="slide11">
+        <h1>Improper Input Validation</h1>
+        <p>Not validating or sanitizing user inputs before processing or rendering can lead to various attacks.</p>
+        <pre><code class="csharp">
+            // In MemesController.cs
+            public async Task<IActionResult> CreateMeme(Meme meme)
+            {
+                _context.Memes.Add(meme);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction(nameof(GetMeme), new { id = meme.Id }, meme);
+            }
+        </code></pre>
+        <pre><code class="javascript">
+            // In index.html
+            memesDiv.innerHTML += meme.url; // Injects unsanitized HTML
+        </code></pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 12: Sensitive Data Exposure -->
+    <div class="slide" id="slide12">
+        <h1>Sensitive Data Exposure</h1>
+        <p>Exposing sensitive configuration data through API responses can lead to unauthorized access.</p>
+        <pre><code class="csharp">
+            [HttpGet("config")]
+            public IActionResult GetConfig()
+            {
+                return Ok(new
+                {
+                    GoogleApiKey = ApiConfig.GoogleApiKey,
+                    DatabasePassword = ApiConfig.DatabasePassword
+                });
+            }
+        </code></pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- Slide 13: Logging Sensitive Information -->
+    <div class="slide" id="slide13">
+        <h1>Logging Sensitive Information</h1>
+        <p>Logging plaintext passwords can expose sensitive data if logs are compromised.</p>
+        <pre><code class="csharp">
+            [HttpPost("login")]
+            public IActionResult Login(string username, string password)
+            {
+                // Logging sensitive information
+                _logger.LogInformation($"User login attempt: {username} with password: {password}");
+                // Authentication logic
+                return Ok();
+            }
+        </code></pre>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+    <!-- Slide 3: Thank You -->
+    <div class="slide" id="slide15">
+        <h1>Github demo! </h1>
+        <button onclick="window.open('https://github.com/HenrikHeiboell/ev-directions-2024/security', '_blank')" style="padding: 10px 20px; cursor: pointer; background-color: #2e8b57; color: #fff; border: none; border-radius: 8px; font-size: 16px;">
+            🔒 Åbn GHAS opsætning
+        </button>
+        <button onclick="window.open('https://github.com/HenrikHeiboell/ev-directions-2024/pull/1')" style="padding: 10px 20px; cursor: pointer; background-color: #2e8b57; color: #fff; border: none; border-radius: 8px; font-size: 16px;">
+            🚀 Åbn Pull Request
+        </button>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+        <!-- Slide 14: Conclusion and Mitigation -->
+        <div class="slide" id="slide14">
+            <h1>Conclusion</h1>
+            <ul style="text-align: left; max-width: 800px; list-style: none; padding: 0; font-size: 20px; margin: 0 auto;">
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🛠️</span>
+                    <strong>Brug miljøvariabler til følsomme data.</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🔄</span>
+                    <strong>Implementer parameteriserede forespørgsler for at forhindre SQL-injektion.</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🧼</span>
+                    <strong>Sanitize og valider alle user-inputs</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">📁</span>
+                    <strong>Valider filtyper og scan uploads for malware.</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🔑</span>
+                    <strong>Håndhæv korrekt autentificering og autorisation.</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🚫</span>
+                    <strong>Undgå at logge følsomme oplysninger.</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🔄</span>
+                    <strong>Opdater og patch regelmæssigt 3 parts dependencies (Dependabot)</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🔍</span>
+                    <strong>Gennemfør regelmæssige sikkerhedsvurderinger ved hjælp af værktøjer som GHAS.</strong>
+                </li>
+                <li style="color: #333; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: #ff6347; font-size: 24px; margin-right: 12px;">🔒</span>
+                    <strong>Begræns CORS-politikker til betroede oprindelser.</strong>
+                </li>
+            </ul>
+            <div class="nav-buttons">
+                <button onclick="prevSlide()">Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </div>
+        </div>
+    <!-- Slide 3: Thank You -->
+    <div class="slide" id="slide15">
+        <h1>Mojn!</h1>
+        <div class="nav-buttons">
+            <button onclick="prevSlide()">Previous</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        // Function to show a specific slide
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'flex' : 'none';
+            });
+            currentSlide = index;
+            localStorage.setItem('currentSlide', currentSlide);
+        }
+
+        // Function to show the next slide
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Function to show the previous slide
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Initialize slide on page load
+        window.onload = () => {
+            const savedSlide = localStorage.getItem('currentSlide');
+            if (savedSlide !== null && !isNaN(savedSlide)) {
+                currentSlide = parseInt(savedSlide, 10);
+            }
+            showSlide(currentSlide);
+        };
+
+        async function searchMemes() {
+            const query = document.getElementById('searchQuery').value;
+            const response = await fetch(`http://localhost:5065/api/memes/search?query=${query}`);
+            const memes = await response.json();
+            const memesDiv = document.getElementById('memes');
+            memesDiv.innerHTML = ''; // Clear previous results
+            memes.forEach(meme => {
+                memesDiv.innerHTML += meme.url; // Injects unsanitized HTML
+
+            });
+        }
+    </script>
+</body>
+
+</html>

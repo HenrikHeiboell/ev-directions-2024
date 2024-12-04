@@ -1,0 +1,50 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache files
+.vs/
+*.ncrunch*
+*.cache
+*.bak
+*.pdb
+
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Secrets and configuration files
+appsettings.json
+appsettings.Development.json
+secrets.json
+
+# Node.js dependencies (if applicable)
+node_modules/
+npm-debug.log
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# JetBrains Rider
+.idea/
+
+# Rider specific files
+*.sln.iml
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package directories
+packages/
