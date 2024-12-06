@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MemeApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16fe754d020cd25438d02d1d70f0730812b8f444")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1ec7d7f7df14728f26aeacc8841961bd64fbf0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MemeApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MemeApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
