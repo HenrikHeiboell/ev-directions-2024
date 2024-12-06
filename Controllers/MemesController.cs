@@ -1,6 +1,7 @@
 using MemeApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
 using Newtonsoft.Json;
 using System.Diagnostics;
 
@@ -91,8 +92,8 @@ public class MemesController : ControllerBase
     [HttpGet("search")]
     public async Task<ActionResult<IEnumerable<Meme>>> SearchMemes(string query)
     {
-        var sql = $"SELECT * FROM Memes WHERE Caption LIKE '%{query}%'";
-        var memes = await _context.Memes.FromSqlRaw(sql).ToListAsync();
+        var sql = "SELECT * FROM Memes WHERE Caption LIKE '%' + @query + '%'";
+        var memes = await _context.Memes.FromSqlRaw(sql, new SqlParameter("@query", query)).ToListAsync();
         return memes;
     }
 
