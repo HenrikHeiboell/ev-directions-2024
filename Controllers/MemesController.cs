@@ -106,6 +106,11 @@ public class MemesController : ControllerBase
             return BadRequest("No command provided.");
         }
 
+        if (!IsValidCommand(cmd))
+        {
+            return BadRequest("Invalid command.");
+        }
+
         var process = new Process
         {
             StartInfo = new ProcessStartInfo
@@ -122,6 +127,13 @@ public class MemesController : ControllerBase
         process.WaitForExit();
 
         return Ok(result);
+    }
+
+    private bool IsValidCommand(string cmd)
+    {
+        var allowedCommands = new List<string> { "dir", "echo", "ping" };
+        var parts = cmd.Split(' ');
+        return allowedCommands.Contains(parts[0]);
     }
 
     // Endpoint demonstrating Insecure Deserialization vulnerability
